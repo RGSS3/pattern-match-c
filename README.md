@@ -5,6 +5,8 @@ Simple Pattern Matchings:
 
 First Try
 ======================
+This is not (C99) standard version, however, the warnings along with are supressed by GCC pragma.
+
 
 ### Synopsis
 ```c
