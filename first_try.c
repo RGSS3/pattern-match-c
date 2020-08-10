@@ -1,9 +1,11 @@
+#pragma GCC diagnostic push "-Wpedantic"
+#pragma GCC diagnostic ignored "-Wpedantic"
 #define DU(type, name, name2) \
     union {\
         type name;\
         type name2;\
     };
-
+#pragma GCC diagnostic pop "-Wpedantic"
 #define DF1(type, value) DU(type, value, _f1)
 #define DF2(type, value) DU(type, value, _f2)
 #define DF3(type, value) DU(type, value, _f3)
@@ -80,6 +82,7 @@ int main() {
             L2(O(g), O(h)))), q));
     printf("%d %d %d %d %d %d %d %d\n", a, b, c, d, e, f, g, h);
 }
+
 
 
 
