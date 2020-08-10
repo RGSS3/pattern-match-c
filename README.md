@@ -21,7 +21,7 @@ struct Line {
 
 struct TwoLine {
     DF1(struct Line, l1);
-    DF2(struct Line, l2)i
+    DF2(struct Line, l2);
 };
 
 
